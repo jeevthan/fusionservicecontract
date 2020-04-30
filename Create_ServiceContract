@@ -1,0 +1,55 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://xmlns.oracle.com/apps/contracts/coreAuthoring/contractService/types/" xmlns:con="http://xmlns.oracle.com/apps/contracts/coreAuthoring/contractService/" xmlns:head="http://xmlns.oracle.com/apps/contracts/coreAuthoring/header/flex/header/" xmlns:par="http://xmlns.oracle.com/apps/contracts/coreAuthoring/parties/flex/partyContact/" xmlns:par1="http://xmlns.oracle.com/apps/contracts/coreAuthoring/parties/flex/party/" xmlns:lin="http://xmlns.oracle.com/apps/flex/contracts/coreAuthoring/lines/" xmlns:con1="http://xmlns.oracle.com/apps/projects/billing/contracts/contractPublicService/" xmlns:con2="http://xmlns.oracle.com/apps/projects/billing/contracts/contractBillingService/" xmlns:bil="http://xmlns.oracle.com/apps/projects/billing/contracts/flex/BilllPlanDff/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:createContract>
+         <typ:contractHeader>
+            <con:OrgName>FMS Dubai</con:OrgName>
+            <con:ContractTypeName>FMS Dubai Services</con:ContractTypeName>
+            <con:Cognomen>Integration Testing</con:Cognomen>
+            <con:Description>Created from SOAP UI by Jeevthan on 30 MARCH 2020 1325 IST</con:Description>
+            <con:StsCode>DRAFT</con:StsCode>
+            <con:CurrencyCode>AED</con:CurrencyCode>
+            <con:StartDate>2020-05-01</con:StartDate>
+            <con:EndDate>2022-04-30</con:EndDate>
+            <con:GenerateBillingSchedule>Y</con:GenerateBillingSchedule>
+            <con:ClientContractNumber_c>1120</con:ClientContractNumber_c>
+            <con:ContractParty>
+               <con:PartyRoleCode>CUSTOMER</con:PartyRoleCode>
+               <con:PartyId>300000008404181</con:PartyId>
+               <con:ContractPartyContact>
+                  <con:ContactRoleCode>PARTY_CONTACT</con:ContactRoleCode>
+                  <con:ContactId>300000008404192</con:ContactId>
+               </con:ContractPartyContact>
+            </con:ContractParty>
+            <con:BillToAccountId>300000008481314</con:BillToAccountId>
+            <con:BillToAccountNumber>20013</con:BillToAccountNumber>
+            <con:BillToSiteUseId>300000008481318</con:BillToSiteUseId>
+            <con:BillToSiteUseLocation>19088</con:BillToSiteUseLocation>
+            <con:TaxClassificationMeaning>UAE_VAT_STD_5</con:TaxClassificationMeaning>
+            <con:ContractLine>
+               <con:LineTypeName>Subscription</con:LineTypeName>
+               <con:StsCode>DRAFT</con:StsCode>
+               <con:ItemName>Subscription Item Fire Extinguisher</con:ItemName>
+               <con:UnitOfMeasure>Each</con:UnitOfMeasure>
+               <con:ContractCharge>
+                  <con:ChargeAppliesTo>PRICE</con:ChargeAppliesTo>
+                  <con:ChargeDefinitionCode>QP_RECURRING_SALE_PRICE</con:ChargeDefinitionCode>
+                  <con:PricePeriodicityCode>Mn</con:PricePeriodicityCode>
+                  <con:PriceTypeCode>RECURRING</con:PriceTypeCode>
+                  <con:ParentEntityCode>LINE</con:ParentEntityCode>
+                  <con:ChargeDefinition>Recurring Sale Price</con:ChargeDefinition>
+                  <con:ChargeCurrencyCode>AED</con:ChargeCurrencyCode>
+                  <con:ContractManualPriceAdjustment>
+                     <con:AdjustmentTypeCode>PRICE_OVERRIDE</con:AdjustmentTypeCode>
+                     <con:AdjustmentValue>700</con:AdjustmentValue>
+                     <con:BasisElementCode>QP_LIST_PRICE</con:BasisElementCode>
+                     <con:ChargeDefinitionCode>QP_RECURRING_SALE_PRICE</con:ChargeDefinitionCode>
+                     <con:PricePeriodicityCode>Mn</con:PricePeriodicityCode>
+                     <con:ReasonCode>ORA_OKC_SALES_NEGOTIATION</con:ReasonCode>
+                  </con:ContractManualPriceAdjustment>
+               </con:ContractCharge>
+            </con:ContractLine>
+         </typ:contractHeader>
+      </typ:createContract>
+   </soapenv:Body>
+</soapenv:Envelope>
